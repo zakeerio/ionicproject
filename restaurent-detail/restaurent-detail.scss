@@ -1,0 +1,53 @@
+.no-padding {
+    padding:  0 !important
+
+}
+.card-background-page {
+    
+             
+    div.toolbar-background{
+    //background-image: url(../../assets/images/nin-live.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 200px !important;
+    position: relative;
+    background: transparent !important;
+} 
+   
+
+  .card-title {
+    font-size: 14px;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+    padding-left: 15px;
+    position: absolute;
+    z-index: 1;
+    left: 5px;
+    top: 140px;
+}
+
+  .card-subtitle {
+    font-size: 13px;
+    // top: 80%;
+    width: 100%;
+    color: #fff;
+    padding-left: 15px;
+    position: absolute;
+    z-index: 1;
+    left: 5px;
+    top: 170px;
+  }
+  .back-button{
+      top: 10%;
+      position: absolute;
+      color: #fff;
+  }
+
+  .search-btn {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    }  
+}

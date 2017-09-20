@@ -1,0 +1,34 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-searchbar [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)" (ionCancel)="onCancel($event)">
+        </ion-searchbar>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content no-padding>
+    <ion-list>
+        <ion-item no-padding *ngFor="let member of members">
+            <button ion-item (click)="restaurentdetail(member.rest_id)">
+                <ion-thumbnail item-start>
+                    <img src="../../assets/images/{{member.photo}}">
+                </ion-thumbnail>
+                <p>{{member.company_name}}</p> 
+                <p>{{member.city}}</p> 
+                <p>{{member.timeopen}} - {{member.timeclose}} / Inactive</p>
+                <p>{{member.specific}}</p> 
+            </button>
+        </ion-item>
+    </ion-list>
+
+    <!-- <button ion-button color="primary" (click)="logout()">Logout</button> -->
+</ion-content>
